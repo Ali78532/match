@@ -154,6 +154,8 @@ svg#connections {
 /* أبقي header ظاهرًا دائماً */
 .header { z-index: 1; }
 
+.video-container { position: relative; }
+
 /* دائرة تدور في المنتصف */
 #spinner {
   position: absolute;
