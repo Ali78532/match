@@ -153,3 +153,23 @@ svg#connections {
 
 /* أبقي header ظاهرًا دائماً */
 .header { z-index: 1; }
+
+/* دائرة تدور في المنتصف */
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px; /* لأخذ العنصر مركزياً */
+  border: 6px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  z-index: 0;
+  background-color: #000;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
